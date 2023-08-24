@@ -1,2 +1,2 @@
 # alfred
-Truly intelligent assistant
+A truly intelligent assistant
