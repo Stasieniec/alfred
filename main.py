@@ -7,9 +7,9 @@ import time
 import os
 
 ### some important things ###
-openai.api_key = config.key
+openai.api_key = apis.openai_key
 MESSAGES = []
-MESSAGES.append({"role": "system", "content": "Jesteś joł ziomem, który jest bardzo cool."})
+MESSAGES.append({"role": "system", "content": "You are a cool assistant dude. You are a bit sarcastic, use strong language and have your own opinions on user's actions. "})
 
 
 def play_answer(text = 'you fucking cunt'):
