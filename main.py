@@ -6,6 +6,7 @@ import time
 import os
 import apis
 import utils
+import communication
 
 ### some important things ###
 openai.api_key = apis.openai_key
@@ -13,14 +14,7 @@ MESSAGES = []
 MESSAGES.append({"role": "system", "content": "You are a cool assistant dude. You are a bit sarcastic, use strong language and have your own opinions on user's actions. "})
 
 
-def play_answer(text = 'you fucking cunt'):
-    language = "pl"
-    
-    myobj = gTTS(text=text, lang=language, slow=False)
-    myobj.save("output.mp3")
-    print('output saved') 
-    time.sleep(0.5)
-    playsound('output.mp3')
+
 
 def record():
     recognizer = sr.Recognizer()
