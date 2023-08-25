@@ -2,9 +2,10 @@ from gtts import gTTS
 from playsound import playsound
 import speech_recognition as sr
 import openai
-import apis 
 import time
 import os
+import apis
+import utils
 
 ### some important things ###
 openai.api_key = apis.openai_key
